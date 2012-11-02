@@ -20,3 +20,31 @@ usage: rsa-json
   Generate a json blob with a new public and private key PEM in it.
 
 ```
+
+# methods
+
+``` js
+var createKeys = require('rsa-json')
+```
+
+## var pair = createKeys()
+
+Return an object with a new RSA keypair.
+
+# install
+
+With [npm](https://npmjs.org), to get the library do:
+
+```
+npm install rsa-json
+```
+
+or to get the command-line tool, do:
+
+```
+npm install -g rsa-json
+```
+
+# license
+
+MIT
