@@ -2,6 +2,8 @@
 
 generate rsa keypairs as json blobs
 
+[![build status](https://secure.travis-ci.org/substack/rsa-json.png)](http://travis-ci.org/substack/rsa-json)
+
 # example
 
 ```
