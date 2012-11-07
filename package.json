@@ -11,7 +11,7 @@
     },
     "devDependencies" : {
         "tap" : "~0.3.1",
-        "rsa-unpack" : "~0.0.2"
+        "rsa-unpack" : "~0.0.4"
     },
     "repository" : {
         "type" : "git",
