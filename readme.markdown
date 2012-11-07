@@ -31,9 +31,11 @@ usage: rsa-json OPTIONS
 var createKeys = require('rsa-json')
 ```
 
-## var pair = createKeys()
+## var pair = createKeys(opts={}, cb)
 
-Return an object with a new RSA keypair.
+Create a new RSA keypair in `cb(err, pair)`.
+
+`opts.bits` sets the number of bits in the modulus.
 
 # install
 
