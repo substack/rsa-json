@@ -4,7 +4,7 @@
     "description" : "generate rsa keypairs as json blobs",
     "main" : "index.js",
     "bin" : {
-        "rsa-json" : "cmd.js"
+        "rsa-json" : "bin/cmd.js"
     },
     "dependencies" : {
         "optimist" : "~0.3.5"

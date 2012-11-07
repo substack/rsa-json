@@ -15,9 +15,13 @@ $ rsa-json
 # usage
 
 ```
-usage: rsa-json
+usage: rsa-json OPTIONS
 
   Generate a json blob with a new public and private key PEM in it.
+  
+  OPTIONS
+  
+    --bits=n    number of bits to use for the modulus
 
 ```
 

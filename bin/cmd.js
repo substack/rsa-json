@@ -1,6 +1,13 @@
 #!/usr/bin/env node
-var rsa = require('./');
+var rsa = require('../');
 var argv = require('optimist').argv;
+var fs = require('fs');
+
+if (argv.h || argv.help) {
+    return fs.createReadStream(__dirname + '/usage.txt')
+        .pipe(process.stdout)
+    ;
+}
 
 rsa(argv, function (err, doc) {
     if (err) {
