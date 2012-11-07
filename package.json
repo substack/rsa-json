@@ -6,6 +6,9 @@
     "bin" : {
         "rsa-json" : "cmd.js"
     },
+    "dependencies" : {
+        "optimist" : "~0.3.5"
+    },
     "repository" : {
         "type" : "git",
         "url" : "git://github.com/substack/rsa-json.git"

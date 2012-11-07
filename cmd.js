@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 var rsa = require('./');
-rsa(function (err, doc) {
+var argv = require('optimist').argv;
+
+rsa(argv, function (err, doc) {
     if (err) {
         console.error(err);
         process.exit(1);
