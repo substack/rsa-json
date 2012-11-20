@@ -33,7 +33,7 @@ usage: rsa-json OPTIONS
 var createKeys = require('rsa-json')
 ```
 
-## var pair = createKeys(opts={}, cb)
+## createKeys(opts={}, cb)
 
 Create a new RSA keypair in `cb(err, pair)`.
 
