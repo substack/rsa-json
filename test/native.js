@@ -1,19 +1,17 @@
-var test = require('tap').test;
+var test = require('tape');
 var unpack = require('rsa-unpack');
-var rsa = require('../');
+var rsa = require('../browser.js');
 
 test('verify unpacked keys', function (t) {
-    var bs = [ 768, 1002, 1345 ];
-    t.plan(10 * bs.length);
+    var bs = [ 768 ];
+    t.plan(8 * bs.length);
     
     bs.forEach(function (bits) {
         console.dir(bits);
-        var pair = rsa.native({ bits : bits });
+        var pair = rsa({ bits : bits });
             
         var pub = unpack(pair.public);
         var priv = unpack(pair.private);
-        t.equal(pub.bits, bits);
-        t.equal(priv.bits, bits);
         
         t.equal(pub.modulus.toString('hex'), priv.modulus.toString('hex'));
         t.equal(pub.publicExponent, priv.publicExponent);
