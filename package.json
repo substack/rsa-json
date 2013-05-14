@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "optimist": "~0.3.5",
-    "keypair": "0.0.3"
+    "keypair": "~0.0.5"
   },
   "devDependencies": {
     "rsa-unpack": "~0.0.4",
