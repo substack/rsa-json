@@ -2,6 +2,8 @@
 
 generate rsa keypairs as json blobs
 
+[![browser support](https://ci.testling.com/substack/rsa-json.png)](http://ci.testling.com/substack/rsa-json)
+
 [![build status](https://secure.travis-ci.org/substack/rsa-json.png)](http://travis-ci.org/substack/rsa-json)
 
 # example
