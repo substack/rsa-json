@@ -1,38 +1,39 @@
 {
-    "name" : "rsa-json",
-    "version" : "0.0.2",
-    "description" : "generate rsa keypairs as json blobs",
-    "main" : "index.js",
-    "bin" : {
-        "rsa-json" : "bin/cmd.js"
-    },
-    "dependencies" : {
-        "optimist" : "~0.3.5"
-    },
-    "devDependencies" : {
-        "tap" : "~0.3.1",
-        "rsa-unpack" : "~0.0.4"
-    },
-    "repository" : {
-        "type" : "git",
-        "url" : "git://github.com/substack/rsa-json.git"
-    },
-    "scripts" : {
-        "test" : "tap test/*.js"
-    },
-    "homepage" : "https://github.com/substack/rsa-json",
-    "keywords" : [
-        "rsa",
-        "json",
-        "crypto",
-        "public",
-        "private",
-        "key"
-    ],
-    "author" : {
-        "name" : "James Halliday",
-        "email" : "mail@substack.net",
-        "url" : "http://substack.net"
-    },
-    "license" : "MIT"
+  "name": "rsa-json",
+  "version": "0.0.2",
+  "description": "generate rsa keypairs as json blobs",
+  "main": "index.js",
+  "bin": {
+    "rsa-json": "bin/cmd.js"
+  },
+  "dependencies": {
+    "optimist": "~0.3.5",
+    "keypair": "0.0.3"
+  },
+  "devDependencies": {
+    "tap": "~0.3.1",
+    "rsa-unpack": "~0.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/rsa-json.git"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "homepage": "https://github.com/substack/rsa-json",
+  "keywords": [
+    "rsa",
+    "json",
+    "crypto",
+    "public",
+    "private",
+    "key"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
 }
