@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "generate rsa keypairs as json blobs",
   "main": "index.js",
+  "browser": "browser.js",
   "bin": {
     "rsa-json": "bin/cmd.js"
   },
