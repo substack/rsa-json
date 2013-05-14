@@ -1,5 +1,6 @@
 var spawn = require('child_process').spawn;
 var fs = require('fs');
+var keypair = require('keypair');
 
 module.exports = function (opts, cb) {
     if (typeof opts === 'function') {
@@ -43,3 +44,5 @@ module.exports = function (opts, cb) {
         });
     });
 };
+
+module.exports.native = keypair;
