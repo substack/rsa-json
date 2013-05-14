@@ -39,6 +39,17 @@ Create a new RSA keypair in `cb(err, pair)`.
 
 `opts.bits` sets the number of bits in the modulus.
 
+## var pair = createKeys.native(opts={})
+
+Like `createKeys()` but uses
+[keypair](https://github.com/juliangruber/keypair) to synchronously
+return a RSA keypair calculated in pure JavaScript.
+
+# browsers
+
+If you require `rsa-json` with [browserify](http://browserify.org) only
+`createKeys.native` is exported.
+
 # install
 
 With [npm](https://npmjs.org), to get the library do:
