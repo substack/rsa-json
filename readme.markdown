@@ -4,6 +4,8 @@ generate rsa keypairs as json blobs
 
 [![build status](https://secure.travis-ci.org/substack/rsa-json.png)](http://travis-ci.org/substack/rsa-json)
 
+[![browser support](https://ci.testling.com/substack/rsa-json.png)](https://ci.testling.com/substack/rsa-json)
+
 # example
 
 ```
