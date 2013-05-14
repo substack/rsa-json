@@ -1,53 +1,53 @@
 {
-  "name": "rsa-json",
-  "version": "0.0.2",
-  "description": "generate rsa keypairs as json blobs",
-  "main": "index.js",
-  "browser": "browser.js",
-  "bin": {
-    "rsa-json": "bin/cmd.js"
-  },
-  "dependencies": {
-    "optimist": "~0.3.5",
-    "keypair": "~0.0.5"
-  },
-  "devDependencies": {
-    "rsa-unpack": "~0.0.4",
-    "tape": "~1.0.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/substack/rsa-json.git"
-  },
-  "scripts": {
-    "test": "tape test/*.js"
-  },
-  "homepage": "https://github.com/substack/rsa-json",
-  "keywords": [
-    "rsa",
-    "json",
-    "crypto",
-    "public",
-    "private",
-    "key"
-  ],
-  "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
-  },
-  "testling": {
-    "files": "test/native.js",
-    "browsers": [
-      "ie/6..latest",
-      "firefox/10",
-      "chrome/20..latest",
-      "safari/5.0.5..latest",
-      "opera/11.0..latest",
-      "iphone/6.0",
-      "ipad/6.0",
-      "android-browser/4.2"
-    ]
-  },
-  "license": "MIT"
+    "name" : "rsa-json",
+    "version" : "0.0.2",
+    "description" : "generate rsa keypairs as json blobs",
+    "main" : "index.js",
+    "browser" : "browser.js",
+    "bin" : {
+        "rsa-json" : "bin/cmd.js"
+    },
+    "dependencies" : {
+        "optimist" : "~0.3.5",
+        "keypair" : "~0.0.5"
+    },
+    "devDependencies" : {
+        "rsa-unpack" : "~0.0.4",
+        "tape" : "~1.0.2"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/substack/rsa-json.git"
+    },
+    "scripts" : {
+        "test" : "tape test/*.js"
+    },
+    "homepage" : "https://github.com/substack/rsa-json",
+    "keywords" : [
+        "rsa",
+        "json",
+        "crypto",
+        "public",
+        "private",
+        "key"
+    ],
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    },
+    "testling" : {
+        "files" : "test/native.js",
+        "browsers" : [
+            "ie/6..latest",
+            "firefox/10",
+            "chrome/20..latest",
+            "safari/5.0.5..latest",
+            "opera/11.0..latest",
+            "iphone/6.0",
+            "ipad/6.0",
+            "android-browser/4.2"
+        ]
+    },
+    "license" : "MIT"
 }
