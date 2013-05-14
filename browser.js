@@ -1,1 +1,1 @@
-module.exports = require('./index.js').native;
+module.exports = require('keypair');
