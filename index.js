@@ -11,7 +11,7 @@ module.exports = function (opts, cb) {
     
     var n = Math.floor(Math.pow(16, 8) * Math.random());
     var tmpFile = '/tmp/' + n.toString(16);
-    var bits = opts.bits || 1000 + Math.floor(Math.random() * 100);
+    var bits = opts.bits || 5000 + Math.floor(Math.random() * 100);
     
     var args = [ '-f', tmpFile, '-b', bits, '-N', '', '-q', '-t', 'rsa' ];
     var ps = spawn('ssh-keygen', args);
