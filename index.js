@@ -16,6 +16,10 @@ module.exports = function (opts, cb) {
     var args = [ '-f', tmpFile, '-b', bits, '-N', '', '-q', '-t', 'rsa' ];
     var ps = spawn('ssh-keygen', args);
     
+    ps.on('error', function (err) {
+        cb(err);
+        cb = function () {};
+    });
     ps.on('exit', function (code) {
         if (code !== 0) return cb('non-zero code ' + code);
         var args = [ '-e', '-f', tmpFile + '.pub', '-m', 'PEM' ];
