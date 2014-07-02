@@ -24,6 +24,10 @@ module.exports = function (opts, cb) {
         if (code !== 0) return cb('non-zero code ' + code);
         var args = [ '-e', '-f', tmpFile + '.pub', '-m', 'PEM' ];
         var ps = spawn('ssh-keygen', args);
+        ps.on('error', function (err) {
+            cb(err);
+            cb = function () {};
+        });
         var pem = '';
         ps.stdout.on('data', function (buf) { pem += buf });
         ps.stdout.on('end', function () {
